@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block extra_css %}{% endblock %}
+
+{% block content %}
+<h1 class="title">MY PORTFOLIO</h1>
+<section class="gallery">
+    <img src="{{ url_for('static', filename='image/Union.png') }}" alt="작품">
+</section>
+{% endblock %}
+
+{% block extra_js %}{% endblock %}

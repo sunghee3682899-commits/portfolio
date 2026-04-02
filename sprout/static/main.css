@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+}
+
+.title {
+    position: absolute;
+    left: 807px;
+    top: 119px;
+    font-family: 'Notable', sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gallery img {
+    width: 1104px;
+    height: 593px;
+    object-fit: cover;
+}

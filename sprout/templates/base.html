@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sunghee's Portfolio</title>
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
-    <script src="./js/main.js" defer></script>
+    {% block extra_css %}{% endblock %}
 </head>
 <body>
-  <h1 class="title">MY PORTFOLIO</h1>
-
-  <section class="gallery">
-    <img src="./image/work.png" alt="작품">
-  </section>
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='js.js') }}" defer></script>
+    {% block extra_js %}{% endblock %}
 </body>
 </html>
